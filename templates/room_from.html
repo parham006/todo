@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(38, 38, 38);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+}
+div {
+    background-color: rgb(38, 38, 38);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Legend Styling */
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Form Elements Styling */
+form p {
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+input[type="submit"] {
+    background-color: #397783;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #192f75;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    {% extends 'main.html' %}
+    
+    {% block content %}
+    <div>
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="submit">
+        </form>
+    {% endblock content %}
+    </div>
+</body>
+</html>

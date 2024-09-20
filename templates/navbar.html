@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a>logo</a>
+    <form method="GET" action="{% url 'home' %}">
+        <input type="text" name="q" placeholder="Search Rooms..." />
+    </form>
+
+    {% if request.user.is_authenticated %} 
+    <span>@{{request.user.username}}</span>
+    <a href="{% url 'logout' %}" >logout</a>
+    {% else %}
+    <a href="{% url 'login' %}">login</a>
+    {% endif %} 
+    <hr>
+</body>
+</html>

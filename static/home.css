@@ -1,0 +1,619 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap");
+
+body {
+  background-color: rgb(28, 28, 28);
+  margin: 0;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 7px;
+}
+
+.header {
+  display: flex;
+  height: 80px;
+  background: rgb(38, 38, 38);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-icon {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.name_app {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+  padding: 8px;
+  border-radius: 5px;
+  width: 500px;
+  position: relative;
+}
+
+.search_form{
+  gap: 230px;
+  display: flex;
+}
+.search-input {
+  flex: 1;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  font-size: 16px;
+  color: #ffffff; /* Changed color for visibility */
+  padding: 8px;
+}
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* Light placeholder color for better visibility */
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.search-icon:hover {
+  width: 35px;
+  height: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.search-input:focus {
+  background-color: rgba(28, 28, 28, 0);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.profile_box {
+  display: flex;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(57, 119, 135);
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.user_id {
+  color: aliceblue;
+  margin-left: 6px;
+}
+
+.login-link {
+  text-decoration: none;
+}
+
+.login_box {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(57, 119, 135);
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.login_txt {
+  font-size: 20px;
+  color: aliceblue;
+}
+.plan_box_flec{
+  display: flex;
+
+  justify-self: center;
+}
+
+.plan_topic{
+  width: 95%;
+  height: 80px;
+  background-color: rgba(28, 28, 28, 0);
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  margin-block: 20px;
+}
+
+.plan_descrpit{
+  width: 95%;
+  height: 200px;
+  background-color: rgba(28, 28, 28, 0);
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+.body {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 1000px;
+  background: rgb(38, 38, 38);
+  transition: 0.5s;
+
+}
+
+
+.box {
+  display: flex;
+  width: 100%;
+  background-image: url("/static/YgSfSQI.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.intobox {
+  height: 90%;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+}
+
+.compose {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: rgb(57, 119, 135);
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  margin-bottom: 30px;
+  color: rgb(200, 200, 200);
+}
+
+.footer {
+  height: 50px;
+  background: rgb(38, 38, 38);
+}
+
+.addNoteBtn {
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000071;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.remove_but {
+  background: none;
+}
+
+
+.plan_box {
+  width: 700px;
+  height: 500px;
+  background-color: rgb(38, 38, 38);
+  position: fixed;
+  border-radius: 15px;
+}
+
+#id_title{
+  background-color: rgb(38,38,38);
+  border: solid #ffffff;
+  width: 600px;
+  height: 350px;
+  color:cornsilk;
+  display:flex;
+  justify-items: start;
+  align-items: flex-start;
+}
+
+#btn-info{
+  margin-top: 20px; /* Spacing above the button */
+  margin-top: 40px;
+  border-radius: 0% 0% 12px 12px / 0% 0% 12px 12px;
+  background-color: #397783;
+  border: none;
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#btn-info:hover{
+  font-weight: bolder;
+  border: 2px solid #ffffff;
+  transition: 1s ;
+}
+
+@media (max-width: 768px) {
+  .plan_box, #id_title, #btn-info {
+    width: 90%; /* Adjust width on smaller screens */
+    height: auto; /* Allow height to adapt to content */
+    margin: 10px; /* Add margin for spacing */
+  }
+
+  #btn-info {
+    font-size: 16px; /* Responsive font size */
+  }
+}
+.plan_label{
+  display: flex;
+  color: aliceblue;
+  font-weight: bold;
+  margin-top: 10px;
+
+}
+.item-row{
+  margin-left:auto;
+  margin-right: auto;
+  height: 70px;
+  width: 95%;
+  background-color: #0b166824;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.7s;
+}
+.item-row:hover{
+  margin-left:auto;
+  margin-right: auto;
+  height: 80px;
+  width: 98%;
+  background-color: #0b166824;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.edit_icon{
+  margin-top: 10px;
+  display: flex;
+  width: 40px;
+  height: 50px;
+  background-color: rgb(45, 145, 115);
+  align-items: flex-end;
+  justify-content: center;
+  border-radius:15px;
+}
+.delete_icon{
+  margin-top: 10px;
+  display: flex;
+  width: 40px;
+  height: 50px;
+  background-color: rgb(158, 39, 57);
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius:15px;
+}
+.icon_box{
+  display: flex;
+  gap: 10px;
+}
+.plan_txt{
+  margin-left: 10px;
+  font-weight: bold;
+  color: #efefef;
+  text-decoration: none;
+  
+}
+.menu {
+  display: flex;
+  width: 150px;
+  height: 70px;
+  background: rgb(38, 38, 38);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: 10px;
+  z-index: 999;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(61, 61, 61);
+  top: 70px;
+  justify-content: center;
+}
+
+.logmenudrop {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(57, 119, 135);
+  width: 100%;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  padding: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+  fill: whitesmoke;
+  margin-top: 2px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+.arrow:hover {
+  width: 20px;
+  height: 20px;
+  fill: whitesmoke;
+  margin-top: 2px;
+  margin-left: 5px;
+  transform: rotate(90deg);
+}
+.room_count{
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 35px;
+  color: #efefef;
+}
+.no_room{
+  font-size: 50px;
+  font-weight: bolder;
+  color: #efefef;
+  margin-left: 30px;
+  margin-top: 70px;
+}
+.Browse_topic{
+  color: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+.topic_name{
+  text-decoration: none;
+  margin-left: 30px;
+}
+.topic_div {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px; 
+  padding-inline: 0px;
+  border-radius: 6px; 
+  margin: 10px 0;
+  transition: background-color 0.3s ease; 
+}
+
+.topic_name {
+  color: #e7e9eb; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s ease; 
+}
+
+
+.topic_name:hover {
+  color: #2783ab; 
+}
+
+.topic_div svg {
+  height: 20px; /* Set icon height */
+  width: 20px; /* Set icon width */
+  transition: fill 0.3s ease; /* Smooth fill transition */
+}
+
+/* Hover effect for the delete icon */
+.topic_div a:last-child:hover svg {
+  fill: #b12e2e; /* Darker red on hover */
+}
+
+.select {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  padding: 12px 15px; /* Space inside the select box */
+  font-size: 16px; /* Increase font size for better readability */
+  color: #efeded; /* Text color */
+  background-color: #1c9fa9; /* Background color */
+  border: 1px solid #ccc; /* Standard border */
+  border-radius: 4px; /* Rounded corners */
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+  -moz-appearance: none; /* Remove default styling in Firefox */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+}
+
+/* Custom Arrow for Dropdown */
+.select::after {
+  content: '▼'; /* Custom arrow */
+  position: absolute;
+  right: 15px; /* Space from the right */
+  pointer-events: none; /* Prevent click events on the arrow */
+}
+
+/* Focus Styles */
+.select:focus {
+  border-color: #2c7590; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(27, 151, 176, 0.5); /* Increase visibility on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Disabled Option Styles */
+.select option:disabled {
+  display: none; /* Hide the selected "Select a topic" option */
+}
+
+/* Error Styles (if required) */
+.select[aria-invalid="true"] {
+  border-color: #000000; /* Red border for error */
+  background-color: #147e8aa5; /* Light red background */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .select {
+      max-width: 100%; /* Allow full width on smaller screens */
+  }
+}
+.plan_txt_descript{
+    color: #ddd;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+.plan_box_div{
+  display: flex;
+  position: relative;
+  transition: 4s;
+}
+h3{
+  color: #e7e9eb;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.add_bottom{
+  fill: #000000 ;
+  padding: 0;
+}
+input:-internal-autofill-selected{
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: light-dark(rgba(232, 240, 254, 0), rgba(70, 90, 126, 0)) !important;
+  color: fieldtext !important;
+}
+
+/* General form container styling */
+.add_topic {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+/* Style for the CSRF token and form fields */
+.add_topic input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #00000000;
+  color: #f3f3f3;
+}
+
+/* Focus state for the input */
+.add_topic input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Button styling */
+.add_topic .add_bottom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #086fdc00;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add_topic .add_bottom svg {
+  fill: white;
+  margin-left: 8px;
+}
+
+/* Hover effect for button */
+.add_topic .add_bottom:hover {
+  background-color: #0057b300;
+}
+
+/* Button active state */
+.add_topic .add_bottom:active {
+  background-color: #00459400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .add_topic {
+    padding: 15px;
+  }
+
+  .add_topic input[type="text"] {
+    font-size: 14px;
+  }
+
+  .add_topic .add_bottom {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

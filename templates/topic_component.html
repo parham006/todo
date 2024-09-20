@@ -1,0 +1,15 @@
+
+{% extends 'main.html' %}
+    
+{% block content %}
+
+
+<hr>
+<a href="{% url 'home' %}"> all </a>
+{% for topic in topics %}
+  <div>
+    <a href="{% url 'home' %}?q={{ topic.name }}">{{ topic.name }}</a><span></span>
+    <a href="{% url 'delete-topic' topic.id %}">delete</a>
+  </div>
+{% endfor %}
+{% endblock content %}

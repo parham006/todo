@@ -1,0 +1,138 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <style>
+      /* General styling */
+      body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          margin: 0;
+          padding: 20px;
+          background-color: #f4f4f9;
+          color: #333;
+          display: grid;
+      }
+
+      h1 {
+          font-size: 2em;
+          color: #007BFF;
+          margin-bottom: 10px;
+      }
+
+      p {
+          font-size: 1em;
+          line-height: 1.5;
+          color: #666;
+      }
+
+      hr {
+          border: none;
+          height: 1px;
+          background-color: #eaeaea;
+          margin: 20px 0;
+      }
+
+      /* Conversation section */
+      .conversation {
+          margin-bottom: 40px;
+      }
+
+      .conversation h3 {
+          font-size: 1.5em;
+          margin-bottom: 10px;
+          color: #333;
+      }
+
+      .conversation div {
+          background-color: #fff;
+          padding: 15px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .conversation div small {
+          display: block;
+          margin-bottom: 10px;
+          color: #999;
+          font-size: 0.9em;
+      }
+
+      .conversation div p {
+          font-size: 1em;
+          color: #333;
+      }
+
+      /* Message input form */
+      form {
+          margin-top: 20px;
+      }
+
+      input[type="text"] {
+          width: 100%;
+          padding: 15px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 1em;
+          color: #333;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      input[type="text"]:focus {
+          border-color: #007BFF;
+          box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+          outline: none;
+      }
+
+      /* Participants section */
+      .participants {
+          margin-top: 40px;
+      }
+
+      .participants h3 {
+          font-size: 1.5em;
+          margin-bottom: 10px;
+          color: #333;
+      }
+
+      .participants div {
+          padding: 10px;
+          background-color: #fff;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .participants div p {
+          font-size: 1em;
+          color: #333;
+          margin: 0;
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
+          body {
+              padding: 10px;
+          }
+
+          h1 {
+              font-size: 1.5em;
+          }
+
+          .conversation div, .participants div {
+              padding: 10px;
+          }
+
+          input[type="text"] {
+              padding: 12px;
+          }
+      }
+    </style>
+
+    <!-- Room Information -->
+    <h1>{{ room.topic }}</h1>
+    <h1>{{ room.name }}</h1>
+    <p>{{ room.description }}</p>
+    <hr>
+
+{% endblock content %}
